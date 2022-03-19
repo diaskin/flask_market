@@ -49,11 +49,13 @@ class Item(db.Model):
         return f'Item {self.name}'
 
     def buy(self, user):
+        "Buying function"
         self.owner = user.id
         user.budget -= self.price
         db.session.commit()
 
     def sell(self, user):
+        "Selling function"
         self.owner = None
         user.budget += self.price
         db.session.commit()
