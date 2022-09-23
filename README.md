@@ -1,5 +1,5 @@
 # flask_market
-Online store prototype. Made with the Flask framework
+Online store prototype. Made with the Python's Flask framework
 
 The application has a function of login and registration, buying goods, as well as displaying the balance in the user's personal account. There is also data validation, since the project has a database.
 
